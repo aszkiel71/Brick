@@ -1,0 +1,12 @@
+Rules:
+1. the deck used for the game is from 10 upwards (the so-called small deck).
+2. in addition, there are 4 special cards
+A) View Deck -> previews the opponent's deck.
+B) Burn Card -> discards one random card each from your opponent's hand and yours.
+C) Switch Card -> swaps your one selected card, for your opponent's random card.
+D) Switch Deck -> swaps your deck, with your opponent's deck. Playable when deck under 5 cards.
+NOTE: Only the player has special cards. The bot does not.
+3 The game ends when there are no more base cards in the deck.
+4. in each turn, the point is scored by the one who draws the higher card (according to seniority).
+5.The game is always started by the player.
+6. it is possible to watch Bot vs Bot game.

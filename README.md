@@ -27,8 +27,8 @@ Brick is a Python-based card game for one or two players, with a twist! It's pla
 ## How to Play
 
 1.  **Game Modes:**
-    * **Player vs. Computer (1):** Play against an AI opponent.
-    * **Computer vs. Computer (2):** Watch two AI opponents play against each other.
+    * **Player vs. Computer (1):** Play against an computer.
+    * **Computer vs. Computer (2):** Watch two computers play against each other.
 2.  **Starting the Game:**
     * Run the `game.py` script.
     * The game will prompt you to choose a game mode.

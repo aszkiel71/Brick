@@ -14,7 +14,7 @@ Brick is a Python-based card game for one or two players, with a twist! It's pla
 1.  **Deck:** The game uses a "small deck" consisting of cards from 10 upwards (10, Jack, Queen, King, Ace).
 2.  **Special Cards:** The player has access to four unique special cards:
     * **View Deck (VD):** Allows the player to preview the opponent's hand.
-    * **Burn Card (BC):** Discards one random card from both the player's and the opponent's hands.
+    * **Burn Card (BC):** Discards one random card from both the player's and the opponent's hands. This card can only be played when both playes have more than 1 card in their hands.
     * **Switch Card (SC):** Allows the player to swap one of their chosen cards with a random card from the opponent's hand.
     * **Switch Deck (SD):** Allows the player to swap their entire hand with the opponent's hand. This card can only be played when both players have less than 5 cards in their hands.
 3.  **Gameplay:**

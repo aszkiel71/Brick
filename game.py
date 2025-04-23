@@ -70,14 +70,14 @@ class Game:
                         break
                     return False
                 else:
-                    print("Cannot use Switch Card - both players must have cards.")
+                    print("Cannot use Switch Card - both players must have more than 1 card.")
                     player.special_cards.insert(card_index, card)
                     return False
             elif card.rank == "VD": # View Deck
                 print(f"{opponent.name}'s deck: {opponent.hand.display()}")
                 return True
             elif card.rank == "BC": # Burn Card
-                if len(player.hand) > 0 and len(opponent.hand) > 0:
+                if len(player.hand) > 1 and len(opponent.hand) > 1:
                     player_burn_index = random.randrange(len(player.hand))
                     opponent_burn_index = random.randrange(len(opponent.hand))
                     burned_player_card = player.hand.cards.pop(player_burn_index)

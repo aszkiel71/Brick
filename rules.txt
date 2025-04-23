@@ -2,7 +2,7 @@ Rules:
 1. the deck used for the game is from 10 upwards (the so-called small deck).
 2. in addition, there are 4 special cards
 A) View Deck -> previews the opponent's deck.
-B) Burn Card -> discards one random card each from your opponent's hand and yours.
+B) Burn Card -> discards one random card each from your opponent's hand and yours. Playable when deck over 1 card.
 C) Switch Card -> swaps your one selected card, for your opponent's random card.
 D) Switch Deck -> swaps your deck, with your opponent's deck. Playable when deck under 5 cards.
 NOTE: Only the player has special cards. The bot does not.

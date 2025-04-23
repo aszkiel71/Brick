@@ -174,8 +174,8 @@ class Game:
 if __name__ == "__main__":
     print("Welcome to Brick!\n")
     rules_txt = open("rules.txt", "r")
-    opt = input("If you want to display rules, type yes. Else, type whatever : ")
-    if opt == "Yes":
+    opt = input("If you want to display rules, type yes. Else, type whatever : ").lower()
+    if opt == "yes":
         for line in rules_txt:
             print(line)
     while True:

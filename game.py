@@ -171,21 +171,42 @@ class Game:
         else:
             print("It's a draw!")
 
-if __name__ == "__main__":
+    def ask_play_again(self):
+        while True:
+            ask = input("Do you wanna play again? (yes/no) : ").lower()
+            if ask == "yes":
+                return True
+            else:
+                return False
+
+def display_rules():
     print("Welcome to Brick!\n")
     rules_txt = open("rules.txt", "r")
     opt = input("If you want to display rules, type yes. Else, type whatever : ").lower()
     if opt == "yes":
         for line in rules_txt:
-            print(line)
+            print(line, end = '')
+    print('\n')
+
+def main():
     while True:
         try:
             mode = int(input("Choose game mode (1 - Player vs Computer / 2 - Computer vs Computer): "))
             if mode in [1, 2]:
                 game = Game(mode)
                 game.play()
+                if not game.ask_play_again():
+                    break
+                else:
+                    main()
+
+
                 break
             else:
                 print("Invalid choice. Enter 1 or 2.")
         except ValueError:
             print("That's not a number. Enter 1 or 2.")
+
+if __name__ == "__main__":
+    display_rules()
+    main()

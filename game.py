@@ -3,6 +3,7 @@ from player import Player
 from deck import Deck
 import time
 
+
 class Game:
     def __init__(self, game_mode):
         self.deck = Deck()
